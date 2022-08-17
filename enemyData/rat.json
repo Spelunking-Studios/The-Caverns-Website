@@ -1,0 +1,9 @@
+{
+	"name" : "Rat",
+	"a": {
+		"speed": 1,
+		"health": 20,
+		"damage": 5,
+		"delay": 120
+	}
+}

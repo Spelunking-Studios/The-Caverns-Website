@@ -1,0 +1,12 @@
+.download_btn:hover {
+	transform: scale(1.05);
+}
+
+@keyframes download_hover_anm {
+	0% {
+		
+	}
+	100% {
+		
+	}
+}

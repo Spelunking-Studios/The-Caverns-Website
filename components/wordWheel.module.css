@@ -1,0 +1,68 @@
+.wordWheel {
+	--w: calc(100%);
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+	font-family: monospace;
+}
+
+.wordWheelMainAnm {
+	animation-name: wordWheelAnimation;
+	animation-duration: 7s;
+	/*animation-fill-mode: forwards;*/
+	animation-iteration-count: infinite;
+	/*animation-delay: 10s;*/
+	/*background-color: skyblue;*/
+}
+
+.wordWheelNextAnm {
+	animation-name: wordWheelNextAnimation;
+	animation-duration: 7s;
+	/*animation-fill-mode: forwards;*/
+	animation-iteration-count: infinite;
+	/*animation-delay: 10s;*/
+	/*background-color: pink;*/
+}
+
+.wordWheel .wordWheelMain {
+	display: inline-block;
+}
+
+.wordWheel .wordWheelNext {
+	display: inline-block;
+	position: absolute;
+	transform: translate(calc(-1 * var(--w)), -1em);
+}
+
+@keyframes wordWheelAnimation {
+	0% {
+		opacity: 1;
+	}
+	0% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+	30% {
+		opacity: 0;
+		transform: translate(0, 1em);
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes wordWheelNextAnimation {
+	0% {
+		opacity: 0;
+	}
+	0% {
+		opacity: 0;
+		transform: translate(calc(-1 * var(--w)), -1em);
+	}
+	30% {
+		opacity: 1;
+		transform: translate(calc(-1 * var(--w)), 0);
+	}
+	100% {
+		transform: translate(calc(-1 * var(--w)), 0);
+	}
+}

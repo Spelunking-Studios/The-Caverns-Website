@@ -1,0 +1,33 @@
+.imageCarouselActiveImage {
+	animation-name: imageCarouselAnm;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	transform: translate(100%, 0);
+}
+
+.imageCarouselInactiveImage {
+	display: none;
+}
+
+.imageCarousel {
+	
+}
+
+@keyframes imageCarouselAnm {
+	0% {
+		opacity: 0;
+		transform: translate(100%, 0);
+	}
+	10% {
+		opacity: 1;
+		transform: translate(0);
+	}
+	90% {
+		opacity: 1;
+		transform: translate(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-100%, 0);
+	}
+}
