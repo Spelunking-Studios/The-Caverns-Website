@@ -17,8 +17,8 @@ export default function Download(props) {
 			</header>
 			<main className="mx-auto min-h-full">
 				<DownloadList/>
-				<div className="absolute bottom-0 w-full"><Footer/></div>
 			</main>
+      <Footer/>
 		</div>
 	</div>
   )

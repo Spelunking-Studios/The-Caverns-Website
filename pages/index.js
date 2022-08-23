@@ -27,9 +27,9 @@ export default function Home(props) {
 					<section className="mt-40 mx-auto rounded">
 						<p className="text-center text-4xl w-11/12 mb-10 mt-10 mx-auto pb-4 border-b-4 border-sky-500">Downloads</p>
 						<DownloadList/>
-						<Footer/>
 					</section>
 				</main>
+      <Footer/>
 			</div>
 		</div>
   	)

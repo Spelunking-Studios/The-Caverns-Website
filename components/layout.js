@@ -19,7 +19,7 @@ export default function Layout( { children }) {
 			<link rel="preconnect" href="https://fonts.googleapis.com"/>
 			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 			<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@900&family=Raleway&family=Titillium+Web&display=swap" rel="stylesheet"/>
-			<div>
+			<div className="scrollbar-thin scrollbar-thumb-blue-700">
 				{ childrenWithProps }
 			</div>
 		</div>
