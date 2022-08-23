@@ -28,7 +28,9 @@ export default function Gallery(props) {
 					</div>
 				</div>
 			</main>
-			<div className="absolute bottom-0 w-full"><Footer/></div>
+			<div className="relative bottom-0 w-full">
+                <Footer/>
+            </div>
 		</div>
 	</div>
   )

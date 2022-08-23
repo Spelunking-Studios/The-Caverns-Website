@@ -25,7 +25,9 @@ export default function GameInfo(props) {
 						<p className="text-lg">Learn about different enemys, and the best ways to defeat them.</p>
 					</div>
 				</div>
-				<div className="absolute bottom-0 w-full"><Footer/></div>
+				<div className="relative bottom-0 w-full">
+                    <Footer/>
+                </div>
 			</main>
 		</div>
 	</div>
