@@ -24,6 +24,6 @@ export default function ThemeToggle(props) {
 		}
 	})
 	return (
-		<button onClick={toggle} className="grid-col-span-1 leading-5 align-middle pt-2 pb-2 ml-auto"><span className="material-symbols-outlined">{ darkMode ? "dark_mode" : "light_mode" }</span></button>
+		<button onClick={toggle} className="grid-col-span-1 leading-5 align-middle pt-2 pb-2 ml-auto mt-1"><span className="material-symbols-outlined">{ darkMode ? "dark_mode" : "light_mode" }</span></button>
 	)
 }

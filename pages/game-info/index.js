@@ -13,7 +13,7 @@ export default function GameInfo(props) {
 			</Head>
 			<NavBar forceRerender={props.forceRerender}/>
 			<header className="h-fit w-full overflow-hidden min-h-full">
-				<h1 className="text-8xl text-center text-zinc-800 mt-20 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel-decorative">Game Info</h1>
+				<h1 className="text-7xl text-center text-zinc-800 mt-28 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">GAME INFO</h1>
 				<h2 className="text-3xl text-center text-zinc-500 mr-auto ml-auto dark:text-neutral-300">This is the home of all sorts of information about the game, from enemies, to the level progression.</h2>
 			</header>
 			<main className="pt-20 ml-auto mr-auto min-h-full">
@@ -25,7 +25,7 @@ export default function GameInfo(props) {
 						<p className="text-lg">Learn about different enemys, and the best ways to defeat them.</p>
 					</div>
 				</div>
-				<Footer/>
+				<div className="absolute bottom-0 w-full"><Footer/></div>
 			</main>
 		</div>
 	</div>

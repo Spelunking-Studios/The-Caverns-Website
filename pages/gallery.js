@@ -13,9 +13,9 @@ export default function Gallery(props) {
 			</Head>
 			<NavBar forceRerender={props.forceRerender}/>
 			<header className="h-fit w-full overflow-hidden min-h-full">
-				<h1 className="text-8xl text-center text-zinc-800 mt-20 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel-decorative">Gallery</h1>
+				<h1 className="text-7xl text-center text-zinc-800 mt-28 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">GALLERY</h1>
 			</header>
-			<main className="pt-20 ml-auto mr-auto min-h-full">
+			<main className="pt-20 mx-auto min-h-full">
 				<div className="grid grid-cols-3 pb-10 pt-10">
 					<div>
 						<img src="/images/snap1.png" className="w-auto h-auto max-h-sm max-w-sm ml-auto mr-auto mt-auto mb-auto"/>
@@ -27,8 +27,8 @@ export default function Gallery(props) {
 						<img src="/images/snap3.png" className="w-auto h-auto max-h-sm max-w-sm ml-auto mr-auto mt-auto mb-auto"/>
 					</div>
 				</div>
-				<Footer/>
 			</main>
+			<div className="absolute bottom-0 w-full"><Footer/></div>
 		</div>
 	</div>
   )
