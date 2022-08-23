@@ -2,7 +2,7 @@ import styles from "./download.module.css";
 
 export default function DownloadList() {
 	return (
-		<div className="flex flex-col w-7/12 mx-auto gap-10 pt-8 pb-16 dark:bg-zinc-700 dark:text-neutral-100">
+		<div className="flex flex-col w-1/2 mx-auto gap-10 pt-8 pb-16 dark:bg-zinc-700 dark:text-neutral-100">
 			<div className="flex flex-row bg-zinc-300 dark:bg-zinc-600 rounded-lg">
 				<div className="flex-1 mt-auto mb-auto mx-auto">
 					<img src="https://www.freepnglogos.com/uploads/windows-logo-png/file-windows-logo-and-wordmark-svg-wikimedia-commons-24.png" className="max-h-14 mx-auto mt-auto mb-auto"/>
