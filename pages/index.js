@@ -28,10 +28,8 @@ export default function Home(props) {
 						<p className="text-center text-4xl w-11/12 mb-10 mt-10 mx-auto pb-4 border-b-4 border-sky-500">Downloads</p>
 						<DownloadList/>
 					</section>
-                    <div className="absolute bottom-0 w-full">
-                        <Footer/>
-                    </div>
 				</main>
+      <Footer/>
 			</div>
 		</div>
   	)
