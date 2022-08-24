@@ -39,13 +39,13 @@ export default function enemyStats(props) {
 				</Head>
 				<NavBar forceRerender={props.forceRerender}/>
 				<header className="h-fit w-full overflow-hidden min-h-full">
-					<h1 className="text-8xl text-center text-zinc-800 mt-20 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel-decorative">{ jdata.name } Stats</h1>
+					<h1 className="text-7xl text-center text-zinc-800 mt-28 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">{ jdata.name.toUpperCase() } STATS</h1>
 				</header>
-				<main className="pt-20 ml-auto mr-auto min-h-full">
-					<div className="w-9/12 border-4 ml-auto mr-auto p-10 text-xl mt-10 mb-10">
-						<p className="text-2xl">Name: { jdata.name }</p>
-						<p>Health: { jdata.a.health } ({ (jdata.a.health / 100) * 100 }% of player's health)</p>
-						<p>Damage: { jdata.a.damage }</p>
+				<main className="mx-auto min-h-full">
+					<div className="grid grid-cols-3 rounded-lg w-1/3 border-4 mx-auto text-xl p-4 mb-24">
+						<a className="text-2xl p-1 col-span-2">Name: { jdata.name }</a>
+						<a className="text-2xl p-1 col-span-2">Health: { jdata.a.health } ({ (jdata.a.health / 100) * 100 }% of player's health)</a>
+						<a className="text-2xl p-1 col-span-2">Damage: { jdata.a.damage }</a>
 					</div>
 					<Footer/>
 				</main>
