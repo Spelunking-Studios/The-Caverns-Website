@@ -21,7 +21,7 @@ export default function DownloadList() {
 			</div>
 			<div className="flex flex-row bg-zinc-300 dark:bg-zinc-600 rounded-lg">
 				<div className="flex-1  mt-auto mb-auto mx-auto">
-					<img src="https://logodownload.org/wp-content/uploads/2022/05/linux-logo.png" className="h-auto w-auto max-h-20 ml-16 mt-auto mb-auto"/>
+					<img src="images/linux-logo.png" className="h-auto w-auto max-h-20 ml-16 mt-auto mb-auto"/>
 				</div>
 				<div className="flex-1">
 					<a tobehref="/downloads/linux/debian/current/The Caverns.deb" className="text-center mt-10 mb-10 mx-auto block leading-10 text-2xl bg-zinc-200 dark:bg-zinc-500 w-60 h-14 p-2 rounded-lg cursor-not-allowed">Coming Soon!</a>
