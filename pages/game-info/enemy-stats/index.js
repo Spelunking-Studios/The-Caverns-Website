@@ -30,8 +30,8 @@ export default function EnemyStats(props) {
           </header>
           <main className="flex-grow pt-20 ml-auto mr-auto min-h-full">
             <p className="text-4xl text-center">Sorry, we ran into an error.</p>
-            <Footer />
           </main>
+          <Footer/>
         </div>
       </div>
     )
@@ -49,8 +49,8 @@ export default function EnemyStats(props) {
           </header>
           <main className="flex-grow pt-20 ml-auto mr-auto min-h-full">
             <p className="text-4xl text-center">Loading...</p>
-            <Footer />
           </main>
+          <Footer/>
         </div>
       </div>
     )
@@ -80,8 +80,8 @@ export default function EnemyStats(props) {
           <div className={`grid grid-cols-${(jdata.enemies.length >= 3 ? "3" : jdata.enemies.length)} gap-24 w-1/2 ml-auto mr-auto pb-24`}>
             {l}
           </div>
-          <Footer />
         </main>
+        <Footer/>
       </div>
     </div>
   )

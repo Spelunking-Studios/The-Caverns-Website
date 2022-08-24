@@ -47,8 +47,8 @@ export default function enemyStats(props) {
 						<a className="text-2xl p-1 col-span-2">Health: { jdata.a.health } ({ (jdata.a.health / 100) * 100 }% of player's health)</a>
 						<a className="text-2xl p-1 col-span-2">Damage: { jdata.a.damage }</a>
 					</div>
-					<Footer/>
 				</main>
+				<Footer/>
 			</div>
 		</div>
 	)
