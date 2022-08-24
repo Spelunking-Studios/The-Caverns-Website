@@ -7,7 +7,7 @@ import { darkMode } from "../../globalStates/theme.js";
 export default function GameInfo(props) {
   return (
     <div className={`${(darkMode % 2) ? "dark" : ""}`}>
-      <div className="flex flex-col min-h-screen w-full dark:bg-zinc-700 dark:text-neutral-200">
+      <div className="flex flex-col min-h-screen w-full bg-zinc-100 dark:bg-zinc-700 dark:text-neutral-200">
         <Head>
           <title>Game Info - The Caverns</title>
         </Head>
@@ -19,7 +19,7 @@ export default function GameInfo(props) {
         <main className="flex-grow w-full pt-20 ml-auto mr-auto min-h-full">
           <div className="grid grid-cols-3 gap-10 w-1/3 mx-auto pt-10 pb-10">
             <Link href="/game-info/enemy-stats">
-            <div className="transition ease-in-out rounded-lg rounded-lg border-4 border-zinc-800 dark:border-zinc-500 dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:hover:scale-105 p-6 col-span-3">
+            <div className="transition ease-in-out rounded-lg rounded-lg border-4 border-zinc-600 bg-zinc-300 dark:border-zinc-500 dark:bg-zinc-800 dark:hover:bg-zinc-700 hover:scale-105 hover:bg-zinc-400 p-6 col-span-3">
                 <a className="text-2xl">Enemy Stats</a>
               <p className="text-lg">Learn about different enemies, and the best ways to defeat them.</p>
             </div>

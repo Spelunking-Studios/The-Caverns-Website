@@ -33,7 +33,7 @@ export default function enemyStats(props) {
 	const jdata = JSON.parse(data);
 	return (
 		<div className={`${(darkMode % 2) ? "dark" : ""}`}>
-			<div className="min-h-screen w-full dark:bg-zinc-700 dark:text-neutral-200">
+			<div className="flex flex-col min-h-screen w-full bg-zinc-100 dark:bg-zinc-700 dark:text-neutral-200">
 				<Head>
 					<title>{ jdata.name } - The Caverns</title>
 				</Head>
@@ -41,8 +41,8 @@ export default function enemyStats(props) {
 				<header className="h-fit w-full overflow-hidden min-h-full">
 					<h1 className="text-7xl text-center text-zinc-800 mt-28 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">{ jdata.name.toUpperCase() } STATS</h1>
 				</header>
-				<main className="mx-auto min-h-full">
-					<div className="grid grid-cols-3 rounded-lg w-1/3 border-4 mx-auto text-xl p-4 mb-24">
+				<main className="flex-grow w-full mx-auto min-h-full">
+					<div className="grid grid-cols-3 rounded-lg w-1/3 border-4 border-zinc-400 mx-auto text-xl p-4 mb-24">
 						<a className="text-2xl p-1 col-span-2">Name: { jdata.name }</a>
 						<a className="text-2xl p-1 col-span-2">Health: { jdata.a.health } ({ (jdata.a.health / 100) * 100 }% of player's health)</a>
 						<a className="text-2xl p-1 col-span-2">Damage: { jdata.a.damage }</a>

@@ -7,7 +7,7 @@ import { darkMode } from "../globalStates/theme.js";
 export default function Download(props) {
   return (
     <div className={`${(darkMode % 2) ? "dark" : ""}`}>
-		<div className="flex flex-col min-h-screen w-full dark:bg-zinc-700 dark:text-neutral-200">
+		<div className="flex flex-col min-h-screen w-full bg-zinc-100 dark:bg-zinc-700 dark:text-neutral-200">
 			<Head>
 				<title>Download - The Caverns</title>
 			</Head>
