@@ -17,6 +17,9 @@ export default function NavBar(props) {
       <Link href="/game-info">
         <a className="text-2xl transition ease-in-out duration-100 pt-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose">Game Info</a>
       </Link>
+      <Link href="/game-info">
+        <a className="text-2xl transition ease-in-out duration-100 pt-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose">Feedback</a>
+      </Link>
       <ThemeToggle forceRerender={props.forceRerender} />
       <span></span>
     </nav>
