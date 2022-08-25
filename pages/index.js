@@ -12,7 +12,7 @@ export default function Home(props) {
 	const [triggerRefresh, setTriggerRefresh] = useState(0);
 	return (
 		<div className={`${(darkMode % 2) ? "dark" : ""}`}>
-		    <div className="min-h-screen w-full dark:bg-zinc-700 dark:text-neutral-200">
+		    <div className="flex flex-col min-h-screen w-full bg-zinc-100 dark:bg-zinc-700 dark:text-neutral-200">
 				<Head>
 					<title>The Caverns</title>
 				</Head>
@@ -21,11 +21,11 @@ export default function Home(props) {
 					<img className="h-64 mx-auto mt-16 mb-10" src="/images/TheCaverns.png"/>
 					<h2 className="text-3xl text-center mx-auto dark:text-neutral-300">A top down indie action-adventure RPG</h2>
 				</header>
-				<main className="mx-auto mb-0 dark:bg-zinc-700 dark:text-neutral-200">
+				<main className="flex-grow w-full mx-auto mb-0 dark:bg-zinc-700 dark:text-neutral-200">
 					<p className="text-center text-3xl pt-2 pb-12">Venture through dark caverns, fighting many enemies along the way.</p>
 					<ImageCarousel images="/images/snap1.png;/images/snap2.png;/images/snap3.png" index={1}/>
 					<section className="mt-40 mx-auto rounded">
-						<p className="text-center text-4xl w-11/12 mb-10 mt-10 mx-auto pb-4 border-b-4 border-sky-500">Downloads</p>
+						<p className="text-center text-4xl w-11/12 mb-20 mt-10 mx-auto pb-8 border-b-4 border-sky-500">Downloads</p>
 						<DownloadList/>
 					</section>
 				</main>
