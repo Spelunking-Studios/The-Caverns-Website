@@ -1,0 +1,23 @@
+.dropdown {
+    display: none;
+}
+
+.dropdown[active="true"] + .dropdownToggle svg {
+    transform: rotate(90deg);
+}
+
+.dropdown[active="true"] {
+    display: block;
+    animation-name: dropdown-animation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dropdown-animation {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: auto;
+    }
+}
