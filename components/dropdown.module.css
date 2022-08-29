@@ -2,22 +2,25 @@
     display: none;
 }
 
-.dropdown[active="true"] + .dropdownToggle svg {
-    transform: rotate(90deg);
+.dropdownToggle > svg[active="true"] {
+    transform: rotate(180deg);
 }
 
 .dropdown[active="true"] {
     display: block;
+}
+
+.dropdown[active="true"] > ul > * {
     animation-name: dropdown-animation;
-    animation-duration: 5s;
+    animation-duration: 150ms;
     animation-fill-mode: forwards;
 }
 
 @keyframes dropdown-animation {
     0% {
-        height: 0px;
+        font-size: 0%;
     }
     100% {
-        height: auto;
+        font-size: 125%;
     }
 }
