@@ -6,6 +6,10 @@
     transform: rotate(180deg);
 }
 
+.dropdownToggle::hover {
+    transform: scale(1.25);
+}
+
 .dropdown[active="true"] {
     display: block;
 }
