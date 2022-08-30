@@ -28,7 +28,7 @@ export default function NavBar(props) {
                     <Link href="/game-info">
                         <a className="text-lg transition ease-in-out duration-100 p-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose">Game Info</a>
                     </Link>
-                    <Link href="/game-info">
+                    <Link href="/feedback">
                         <a className="text-lg transition ease-in-out duration-100 p-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose">Feedback</a>
                     </Link>
                 </ul>
