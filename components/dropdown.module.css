@@ -1,0 +1,30 @@
+.dropdown {
+    display: none;
+}
+
+.dropdownToggle > svg[active="true"] {
+    transform: rotate(180deg);
+}
+
+.dropdownToggle::hover {
+    transform: scale(1.25);
+}
+
+.dropdown[active="true"] {
+    display: block;
+}
+
+.dropdown[active="true"] > ul > * {
+    animation-name: dropdown-animation;
+    animation-duration: 150ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dropdown-animation {
+    0% {
+        font-size: 0%;
+    }
+    100% {
+        font-size: 125%;
+    }
+}

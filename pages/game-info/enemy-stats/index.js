@@ -31,7 +31,7 @@ export default function EnemyStats(props) {
           <main className="flex-grow pt-20 ml-auto mr-auto min-h-full">
             <p className="text-4xl text-center">Sorry, we ran into an error.</p>
           </main>
-          <Footer/>
+          <Footer />
         </div>
       </div>
     )
@@ -50,7 +50,7 @@ export default function EnemyStats(props) {
           <main className="flex-grow pt-20 ml-auto mr-auto min-h-full">
             <p className="text-4xl text-center">Loading...</p>
           </main>
-          <Footer/>
+          <Footer />
         </div>
       </div>
     )
@@ -59,10 +59,10 @@ export default function EnemyStats(props) {
   for (let i = 0; i < jdata.enemies.length; i++) {
     l.push((
       <Link href={`/game-info/enemy-stats/${jdata.enemies[i].toLowerCase()}`} className="">
-      <div className="transition ease-in-out rounded-lg border-4 border-zinc-600 bg-zinc-300 dark:border-zinc-500 dark:bg-zinc-800 dark:hover:bg-zinc-700 hover:scale-105 hover:bg-zinc-400 p-2 grid grid-cols-3 gap-5">
+        <div className="transition ease-in-out rounded-lg border-4 border-zinc-600 bg-zinc-300 dark:border-zinc-500 dark:bg-zinc-800 dark:hover:bg-zinc-700 hover:scale-105 hover:bg-zinc-400 p-2 grid grid-cols-3 gap-5 cursor-pointer">
           <a className="text-4xl col-span-2 my-auto ml-6">{capitalizeFirstLetter(jdata.enemies[i])}</a>
-        <img src={`/api/game-info/images/enemies/${jdata.enemies[i].toLowerCase()}`} className="" />
-      </div>
+          <img src={`/api/game-info/images/enemies/${jdata.enemies[i].toLowerCase()}`} className="" />
+        </div>
       </Link>
     ))
   }
@@ -81,7 +81,7 @@ export default function EnemyStats(props) {
             {l}
           </div>
         </main>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   )
