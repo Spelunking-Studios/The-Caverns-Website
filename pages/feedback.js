@@ -39,7 +39,7 @@ export default function Feedback(props) {
                 <div className="grid grid-cols-3 my-5">
                     <p>Bug Severity</p>
                     {/*<input type="number" min="1" max="10" name="bug-severity" className="text-black dark:text-white bg-neutral-300 dark:bg-neutral-600" onChange={e => {setForm_bugSeverity(e.target.value)}} onInput={e => {setForm_bugSeverity(e.target.value)}}/>*/}
-                    <NumberInput min={1} max={10} name="bug-severity" classes="text-black dark:text-white bg-neutral-300 dark:bg-neutral-600 apperance-none col-span-2"/>
+                    <NumberInput min={1} max={5} name="bug-severity" classes="col-span-2"/>
                 </div>
             </div>
         )
@@ -67,9 +67,9 @@ export default function Feedback(props) {
                         </fieldset>
                         <fieldset className="grid grid-cols-4 p-2 mx-auto">
                             <label className="text-2xl p-1">Category</label>
-                            <div id="dropdown" class={`relative ${dropdownStyles.dropdown} bg-neutral-300 dark:bg-neutral-600 rounded-lg px-3 dark:text-gray-200 dark:text-neutral-300 text-neutral-700 w-full col-span-3`} active={"" + dropdownActive}>
-                                <p className="text-lg transition ease-in-out duration-100 p-1 leading-loose hover:cursor-pointer select-none" onClick={dropdownClick}>{category}</p>
-                                <ul className="grid grid-col-1 py-1 text-sm bg-neutral-300 dark:bg-neutral-600 rounded-b-lg pr-5 pl-3 dark:text-gray-200 dark:text-neutral-300 text-neutral-700 w-full border-t-2 border-t-white max-h-32 overflow-y-auto" aria-labelledby="dropdownMenu">
+                            <div id="dropdown" class={`relative ${dropdownStyles.dropdown} bg-neutral-300 dark:bg-neutral-600 ${dropdownActive ? "rounded-t-lg" : "rounded-lg"} px-3 dark:text-gray-200 dark:text-neutral-300 text-neutral-700 w-full col-span-3 p-0`} active={"" + dropdownActive}>
+                                <p className="text-lg transition ease-in-out duration-100 p-1 leading-loose hover:cursor-pointer select-none rounded-none" onClick={dropdownClick}>{category}</p>
+                                <ul className="grid grid-col-1 py-1 text-sm bg-neutral-300 dark:bg-neutral-600 rounded-b-lg pr-5 pl-3 dark:text-gray-200 dark:text-neutral-300 text-neutral-700 w-full max-h-32 overflow-y-auto mx-auto" aria-labelledby="dropdownMenu">
                                     <p className="text-lg transition ease-in-out duration-100 p-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose hover:cursor-pointer" onClick={dropdownClickBug}>Bug</p>
                                     <p className="text-lg transition ease-in-out duration-100 p-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose hover:cursor-pointer" onClick={dropdownClickSuggestion}>Suggestion</p>
                                 </ul>

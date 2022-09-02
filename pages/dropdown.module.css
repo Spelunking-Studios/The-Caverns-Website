@@ -1,6 +1,27 @@
+.dropdown[active="true"] {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown[active="true"] > ul {
+    box-shadow: 5px 15px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
 .dropdown > ul {
-    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 1;
     transition: font-size 1s;
+}
+
+.dropdown[active="true"] > ul:before {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-bottom: 0.25em;
 }
 
 .dropdownToggle > svg[active="true"] {
@@ -12,11 +33,25 @@
 }
 
 .dropdown[active="true"] > ul {
-    display: block;
+    animation-name: dropdown-container-animation;
+    animation-duration: 150ms;
+    animation-fill-mode: forwards;
+}
+
+.dropdown[active="false"] > ul {
+    animation-name: dropdown-up-container-animation;
+    animation-duration: 150ms;
+    animation-fill-mode: forwards;
 }
 
 .dropdown[active="true"] > ul > * {
     animation-name: dropdown-animation;
+    animation-duration: 150ms;
+    animation-fill-mode: forwards;
+}
+
+.dropdown[active="false"] > ul > * {
+    animation-name: dropdown-up-animation;
     animation-duration: 150ms;
     animation-fill-mode: forwards;
 }
@@ -29,3 +64,37 @@
         font-size: 125%;
     }
 }
+
+@keyframes dropdown-up-animation {
+    0% {
+        font-size: 125%;
+    }
+    100% {
+        font-size: 0%;
+    }
+}
+
+@keyframes dropdown-container-animation {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes dropdown-up-container-animation {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+/*
+Not all the way, I just said that this was the key, it looks weird now tho
+*/
