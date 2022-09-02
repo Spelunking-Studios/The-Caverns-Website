@@ -1,0 +1,10 @@
+{
+	"name" : "Rat Boss",
+	"a": {
+		"speed": 40,
+		"health": 200,
+		"damage": 32,
+		"delay": 240,
+        "detectionRange": 1000
+	}
+}

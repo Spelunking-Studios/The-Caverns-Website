@@ -1,0 +1,28 @@
+.numberInput {
+    display: grid;
+    grid-template-rows: 2;
+}
+
+.numberInput > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.numberInput > div > * {
+    flex: 1;
+    text-align: center;
+}
+
+.numberInput input[type="radio"] {
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: white;
+    height: 1em;
+    width: 1em;
+    margin: auto;
+}
+
+.numberInput input[type="radio"]:checked {
+    background-color: blue;
+}

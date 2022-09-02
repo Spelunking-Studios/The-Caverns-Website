@@ -12,8 +12,8 @@ export default function NavBar(props) {
         <nav className="z-40 w-full h-14 dark:bg-zinc-800 bg-zinc-300 flex gap-6 fixed dark:text-neutral-200">
             <span></span>
             <button id="dropdownMenu" data-dropdown-toggle="dropdown" type="button" class={`${dropdownStyles.dropdownToggle}`} onClick={dropdownClick}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" className="transition ease-in-out w-8 hover:scale-125" active={"" + dropdownActive}>
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className="transition ease-in-out w-8 hover:scale-125" active={"" + dropdownActive}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                 </svg>
             </button>
 
