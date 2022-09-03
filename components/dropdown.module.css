@@ -3,12 +3,12 @@
 }
 
 .dropdownToggle > svg[active="true"] {
-    transform: rotate(180deg);
+    transform: scaleY(-1);
     transition: 150ms;
 }
 
 .dropdownToggle > svg[active="false"] {
-    transform: rotate(0deg);
+    transform: scaleY(1);
     transition: 150ms;
 }
 
