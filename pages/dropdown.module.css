@@ -1,9 +1,11 @@
 .dropdown[active="true"] {
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    transition: 150ms;
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown[active="true"] > ul {
-    box-shadow: 5px 15px 5px 5px rgba(0, 0, 0, 0.25);
+.dropdown[active="false"] {
+    transition: 150ms;
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0);
 }
 
 .dropdown > ul {
@@ -32,13 +34,13 @@
     transform: scale(1.25);
 }
 
-.dropdown[active="true"] > ul {
+.dropdown[active="true"] {
     animation-name: dropdown-container-animation;
     animation-duration: 150ms;
     animation-fill-mode: forwards;
 }
 
-.dropdown[active="false"] > ul {
+.dropdown[active="false"] {
     animation-name: dropdown-up-container-animation;
     animation-duration: 150ms;
     animation-fill-mode: forwards;
@@ -52,7 +54,7 @@
 
 .dropdown[active="false"] > ul > * {
     animation-name: dropdown-up-animation;
-    animation-duration: 150ms;
+    animation-duration: 30ms;
     animation-fill-mode: forwards;
 }
 
@@ -76,25 +78,18 @@
 
 @keyframes dropdown-container-animation {
     0% {
-        display: none;
-        opacity: 0;
+        height: 45px;
     }
     100% {
-        display: block;
-        opacity: 1;
+        height: 145px;
     }
 }
 
 @keyframes dropdown-up-container-animation {
     0% {
-        display: block;
-        opacity: 1;
+        height: 145px;
     }
     100% {
-        display: none;
-        opacity: 0;
+        height: 45px
     }
 }
-/*
-Not all the way, I just said that this was the key, it looks weird now tho
-*/
