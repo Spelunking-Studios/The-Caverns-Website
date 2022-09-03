@@ -45,7 +45,7 @@ export default function Feedback(props) {
     }
     const loadSuggestionText = () => {
         setFc(
-            <textarea placeholder="Enter description" className="rounded-lg p-3 outline-none text-black dark:text-white bg-neutral-300 dark:bg-neutral-600 w-full mx-auto my-5 resize-none" name="content" onInput={setFormContent}></textarea>
+            <textarea placeholder="Enter description" className="rounded-lg p-3 outline-none text-black dark:text-white bg-neutral-300 dark:bg-neutral-600 w-full mx-auto mt-8 mb-6 resize-none" name="content" onInput={setFormContent}></textarea>
         )
     }
     return (
@@ -60,18 +60,22 @@ export default function Feedback(props) {
                 </header>
                 <main className="flex-grow w-full mx-auto min-h-full">
                     <form method="GET" action="https://project.the-caverns.repl.co/api/feedback.php" className=" border-neutral-300 dark:border-neutral-600 w-1/3 mx-auto rounded">
-                        <fieldset className="grid grid-cols-4 p-2 mx-auto">
-                            <label className="text-2xl p-1">Subject</label>
-                            <input type="text" name="title" required className="absolute ml-40 px-3 w-1/4 rounded-lg col-span-3 h-10 p-2 text-left bg-neutral-300 dark:bg-neutral-600 outline-none focus:border-4 focus:border-neutral-400 focus:dark:border-neutral-500" />
+                        <fieldset className="grid grid-cols-4 mb-4">
+                            <label className="text-2xl p-1 ml-3">Subject</label>
+                            <div className="col-span-3">
+                            <input type="text" name="title" required className="fixed px-3 w-1/4 rounded-lg col-span-3 h-10 p-2 text-left bg-neutral-300 dark:bg-neutral-600 outline-none focus:border-4 focus:border-neutral-400 focus:dark:border-neutral-500" />
+                            </div>
                         </fieldset>
-                        <fieldset className="grid grid-cols-4 p-2 mx-auto">
-                            <label className="text-2xl p-1">Category</label>
-                            <div id="dropdown" class={`absolute ${dropdownStyles.dropdown} ml-40 bg-neutral-300 dark:bg-neutral-600 rounded-lg px-3 dark:text-gray-200 dark:text-neutral-300 text-neutral-700 w-1/4 col-span-3 p-0`} active={"" + dropdownActive}>
+                        <fieldset className="grid grid-cols-4">
+                            <label className="text-2xl p-1 ml-3">Category</label>
+                            <div className="col-span-3">
+                            <div id="dropdown" class={`fixed ${dropdownStyles.dropdown} bg-neutral-300 dark:bg-neutral-600 rounded-lg px-3 dark:text-gray-200 dark:text-neutral-300 text-neutral-700 w-1/4 col-span-3 p-0`} active={"" + dropdownActive}>
                                 <p className="text-lg transition ease-in-out duration-100 p-1 leading-loose hover:cursor-pointer select-none rounded-none" onClick={dropdownClick}>{category}</p>
                                 <ul className="w-full pl-3 pr-3" aria-labelledby="dropdownMenu">
                                     <p className="text-lg transition ease-in-out duration-100 p-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose hover:cursor-pointer" onClick={dropdownClickBug}>Bug</p>
                                     <p className="text-lg transition ease-in-out duration-100 p-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose hover:cursor-pointer" onClick={dropdownClickSuggestion}>Suggestion</p>
                                 </ul>
+                            </div>
                             </div>
                         </fieldset>
                         {fc}
