@@ -3,19 +3,47 @@
 }
 
 .dropdownToggle > svg[active="true"] {
-    transform: rotate(180deg);
+    transform: scaleY(-1);
+    transition: 150ms;
 }
 
-.dropdownToggle::hover {
+.dropdownToggle > svg[active="false"] {
+    transform: scaleY(1);
+    transition: 150ms;
+}
+
+.dropdownToggle{
+    transition: 150ms;
+}
+
+.dropdownToggle:hover {
     transform: scale(1.25);
 }
 
-.dropdown[active="true"] {
+.dropdown{
     display: block;
+}
+
+.dropdown[active="true"] {
+    animation-name: containerdown-animation;
+    animation-duration: 150ms;
+    animation-fill-mode: forwards;
+}
+
+.dropdown[active="false"] {
+    animation-name: containerup-animation;
+    animation-duration: 150ms;
+    animation-fill-mode: forwards;
 }
 
 .dropdown[active="true"] > ul > * {
     animation-name: dropdown-animation;
+    animation-duration: 150ms;
+    animation-fill-mode: forwards;
+}
+
+.dropdown[active="false"] > ul > * {
+    animation-name: dropup-animation;
     animation-duration: 150ms;
     animation-fill-mode: forwards;
 }
@@ -26,5 +54,36 @@
     }
     100% {
         font-size: 125%;
+    }
+}
+
+@keyframes dropup-animation {
+    0% {
+        font-size: 125%;
+    }
+    100% {
+        font-size: 0%;
+    }
+}
+
+@keyframes containerdown-animation{
+    0% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes containerup-animation{
+    0% {
+        display: block;
+        opacity: 1;
+    }
+    100% {
+        display: none;
+        opacity: 0;
     }
 }

@@ -3,7 +3,7 @@ import styles from "./numberInput.module.css";
 export default function NumberInput({ min, max, name, classes}) {
     let comps = [];
     let labels = [];
-    for (let i = min; i <= max; i++) {
+    for (let i = min + 1; i <= max - 1; i++ ) {
         comps.push(
             <input type="radio" name={name} value={i}/>
         );
@@ -15,10 +15,16 @@ export default function NumberInput({ min, max, name, classes}) {
     return (
         <div className={`${styles.numberInput} ${classes}`}>
             <div>
+                <input type="radio" id="first" name={name} value={min}/>
                 { comps }
+                <input type="radio" id="last" name={name} value={max}/>
             </div>
             <div>
-                { labels }
+                <p>once or twice</p>
+                <p>multiple times</p>
+                <p>regularly</p>
+                <p>very often</p>
+                <p>constantly</p>
             </div>
         </div>
     )

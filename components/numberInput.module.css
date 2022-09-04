@@ -1,6 +1,7 @@
 .numberInput {
     display: grid;
     grid-template-rows: 2;
+    grid-gap: 0.5rem;
 }
 
 .numberInput > div {
@@ -16,13 +17,28 @@
 .numberInput input[type="radio"] {
     appearance: none;
     cursor: pointer;
-    border: 1px solid white;
-    background-color: white;
+    background-color: rgb(155, 155, 155);
     height: 1em;
     width: 1em;
     margin: auto;
 }
 
+.numberInput input[id="first"] {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.numberInput input[id="last"] {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
 .numberInput input[type="radio"]:checked {
-    background-color: blue;
+    background-color: rgb(43, 151, 223);
+    z-index: 1;
+    border-radius: 2rem;
+    outline-style: solid;
+    outline-width: 0.2rem;
+    outline-color: rgb(220, 220, 220);
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
