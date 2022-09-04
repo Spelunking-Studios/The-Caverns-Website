@@ -1,15 +1,31 @@
 .dropdown[active="true"] {
-    transition: 150ms;
+    box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out;
+    transition-duration: 150ms;
+}
+
+.dropdown[active="true"] > ul {
     box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out;
+    transition-duration: 150ms;
 }
 
 .dropdown[active="false"] {
-    transition: 150ms;
-    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0);
+    box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.0);
+    transition: ease-in-out;
+    transition-duration: 150ms;
+}
+
+.dropdown[active="false"] > ul {
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.0);
+    transition: ease-in-out;
+    transition-duration: 150ms;
 }
 
 .dropdown > ul {
     position: absolute;
+    margin-top: -0.5rem;
+    padding-top: 0.5rem;
     left: 0;
     z-index: 1;
     transition: font-size 1s;
@@ -26,21 +42,13 @@
     margin-bottom: 0.25em;
 }
 
-.dropdownToggle > svg[active="true"] {
-    transform: rotate(180deg);
-}
-
-.dropdownToggle::hover {
-    transform: scale(1.25);
-}
-
-.dropdown[active="true"] {
+.dropdown[active="true"] > ul {
     animation-name: dropdown-container-animation;
     animation-duration: 150ms;
     animation-fill-mode: forwards;
 }
 
-.dropdown[active="false"] {
+.dropdown[active="false"] > ul {
     animation-name: dropdown-up-container-animation;
     animation-duration: 150ms;
     animation-fill-mode: forwards;
@@ -54,7 +62,7 @@
 
 .dropdown[active="false"] > ul > * {
     animation-name: dropdown-up-animation;
-    animation-duration: 30ms;
+    animation-duration: 150ms;
     animation-fill-mode: forwards;
 }
 
@@ -78,18 +86,25 @@
 
 @keyframes dropdown-container-animation {
     0% {
-        height: 45px;
+        display: none;
+        opacity: 0;
     }
     100% {
-        height: 145px;
+        display: block;
+        opacity: 1;
     }
 }
 
 @keyframes dropdown-up-container-animation {
     0% {
-        height: 145px;
+        display: block;
+        opacity: 1;
     }
     100% {
-        height: 45px
+        display: none;
+        opacity: 0;
     }
 }
+/*
+Not all the way, I just said that this was the key, it looks weird now tho
+*/
