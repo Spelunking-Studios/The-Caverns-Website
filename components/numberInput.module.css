@@ -1,6 +1,5 @@
 .numberInput {
     display: grid;
-    grid-template-rows: 2;
     grid-gap: 0.5rem;
 }
 
@@ -23,12 +22,12 @@
     margin: auto;
 }
 
-.numberInput input[id="first"] {
+.numberInput input:first-child {
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
 
-.numberInput input[id="last"] {
+.numberInput input:last-child {
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }

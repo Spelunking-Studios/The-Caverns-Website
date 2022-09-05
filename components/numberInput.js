@@ -1,30 +1,24 @@
 import styles from "./numberInput.module.css";
 
-export default function NumberInput({ min, max, name, classes}) {
+export default function NumberInput({ min, max, name, classes, values, labels}) {
     let comps = [];
-    let labels = [];
-    for (let i = min + 1; i <= max - 1; i++ ) {
+    let ls = [];
+    for (let i = min; i <= max; i++ ) {
         comps.push(
-            <input type="radio" name={name} value={i}/>
+            <input type="radio" name={name} value={values[i - min]}/>
         );
-        labels.push(
-            <p>{i}</p>
+        ls.push(
+            <p className="rotate-45 xl:rotate-0">{ labels[i - min] }</p>
         );
     }
     {/*<input type="number" min={min} max={max} name={name} className="text-black dark:text-white bg-neutral-300 dark:bg-neutral-600 appearance-none col-span-2 text-lg outline-neutral-300 dark:outline-neutral-600 px-2"/>*/}
     return (
-        <div className={`${styles.numberInput} ${classes}`}>
+        <div className={`${styles.numberInput} ${classes} grid-rows-2`}>
             <div>
-                <input type="radio" id="first" name={name} value={min}/>
                 { comps }
-                <input type="radio" id="last" name={name} value={max}/>
             </div>
             <div>
-                <p>once or twice</p>
-                <p>multiple times</p>
-                <p>regularly</p>
-                <p>very often</p>
-                <p>constantly</p>
+                { ls }
             </div>
         </div>
     )
