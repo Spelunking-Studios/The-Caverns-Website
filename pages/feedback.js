@@ -36,12 +36,8 @@ export default function Feedback(props) {
             <div>
                 <textarea placeholder="Enter description" className="rounded-lg p-3 outline-none text-black dark:text-white bg-neutral-300 dark:bg-neutral-600 w-full mx-auto mt-8 mb-6 resize-none" name="content" onInput={setFormContent}></textarea>
                 <div className="grid grid-cols-3 mb-6">
-                    <p>Bug Severity</p>
-                    {/*<input type="number" min="1" max="10" name="bug-severity" className="text-black dark:text-white bg-neutral-300 dark:bg-neutral-600" onChange={e => {setForm_bugSeverity(e.target.value)}} onInput={e => {setForm_bugSeverity(e.target.value)}}/>*/}
-                    <NumberInput min={1} max={5} name="bug-severity" classes="col-span-2" values={[1, 2, 3, 4, 5]} labels={[1, 2, 3, 4, 5]}/>
-                </div>
-                <div className="grid grid-cols-3 mb-6">
                     <p>How often does this disrupt your gameplay?</p>
+                    {/*<input type="number" min="1" max="10" name="bug-severity" className="text-black dark:text-white bg-neutral-300 dark:bg-neutral-600" onChange={e => {setForm_bugSeverity(e.target.value)}} onInput={e => {setForm_bugSeverity(e.target.value)}}/>*/}
                     <NumberInput min={1} max={5} name="bug-severity" classes="col-span-2" values={[1, 2, 3, 4, 5]} labels={["Rarely", "Somewhat often", "Often", "Quite Frequent", "Constantly"]}/>
                 </div>
             </div>
