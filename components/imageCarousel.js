@@ -10,7 +10,7 @@ export default function ImageCarousel(props) {
 		let l = [];
 		imageSrcs.forEach((imageSrc, i) => {
 			l.push(
-				<img className={`flex-1 rounded w-auto h-auto ml-auto mr-auto max-w-2xl ${(index == i) ? styles.imageCarouselActiveImage : styles.imageCarouselInactiveImage}`} src={imageSrc} key={i}/>
+				<img className={`flex-1 rounded w-auto h-auto ml-auto mr-auto max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl ${(index == i) ? styles.imageCarouselActiveImage : styles.imageCarouselInactiveImage}`} src={imageSrc} key={i}/>
 			)
 		});
 		setImages(l);
