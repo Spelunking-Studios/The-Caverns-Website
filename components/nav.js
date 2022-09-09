@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ThemeToggle from "./theme-toggle.js";
 import dropdownStyles from "./dropdown.module.css";
+import SignInButton from "./sign-inBtn.js";
 import { useState } from "react";
 
 export default function NavBar(props) {
@@ -40,9 +41,9 @@ export default function NavBar(props) {
 
             <div className="flex flex-grow"></div>
 
-            <Link href="/">
-                <a className="text-2xl transition ease-in-out duration-100 pt-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose">Sign In</a>
-            </Link>
+            <p className="text-2xl transition ease-in-out duration-100 pt-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose">
+                <SignInButton/>
+            </p>
 
             <ThemeToggle forceRerender={props.forceRerender} />
             <span></span>
