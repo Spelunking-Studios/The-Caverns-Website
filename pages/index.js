@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Footer from "../components/footer.js";
 import NavBar from "../components/nav.js";
+import { darkMode } from "../globalStates/theme.js";
 import ImageCarousel from "../components/imageCarousel.js";
 import WordWheel from "../components/wordWheel.js";
 import DownloadList from "../components/download.js";
-import { darkMode } from "../globalStates/theme.js";
 import { useState } from "react";
 import styles from "../components/page.module.css";
 

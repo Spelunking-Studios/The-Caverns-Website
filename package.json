@@ -6,8 +6,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@next-auth/upstash-redis-adapter": "^3.0.1",
     "@upstash/redis": "^1.13.1",
+    "cookies-next": "^2.1.1",
+    "jsonwebtoken": "^8.5.1",
     "next": "latest",
     "next-auth": "^4.10.3",
     "nextjs-progressbar": "^0.0.14",
