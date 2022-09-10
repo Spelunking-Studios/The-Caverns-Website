@@ -12,7 +12,7 @@ export default function Home(props) {
 	const [triggerRefresh, setTriggerRefresh] = useState(0);
 	return (
 		<div className={`${(darkMode % 2) ? "dark" : ""}`}>
-		    <div className="flex flex-col min-h-screen w-full bg-zinc-100 dark:bg-zinc-700 dark:text-neutral-200">
+		    <div className="transition ease-in-out flex flex-col min-h-screen w-full bg-zinc-100 dark:bg-zinc-700 dark:text-neutral-200">
 				<Head>
 					<title>The Caverns</title>
 				</Head>

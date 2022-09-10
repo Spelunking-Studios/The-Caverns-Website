@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<div className="static bottom-0 w-full bg-zinc-300 grid grid-cols-4 py-5 px-16 text-center gap-none dark:bg-zinc-800 dark:text-neutral-200">
+		<div className="transition ease-in-out static bottom-0 w-full bg-zinc-300 grid grid-cols-4 py-5 px-16 text-center gap-none dark:bg-zinc-800 dark:text-neutral-200">
 			<div className="grid grid-cols-1 inline-block">
 				<p className="text-lg col-span-1 font-semibold mb-2">Links</p>
 				<p><Link href="/download" target="_blank"><a className=" transition ease-in-out duration-100 hover:text-sky-600 hover:underline dark:hover:text-sky-300">Download</a></Link></p>

@@ -9,7 +9,7 @@ export default function NavBar(props) {
         setDropdownActive(!dropdownActive);
     }
     return (
-        <nav className="z-40 w-full h-14 dark:bg-zinc-800 bg-zinc-300 flex gap-6 fixed dark:text-neutral-200">
+        <nav className="transition ease-in-out z-40 w-full h-14 dark:bg-zinc-800 bg-zinc-300 flex gap-6 fixed dark:text-neutral-200">
             <span></span>
             <button id="dropdownMenu" data-dropdown-toggle="dropdown" type="button" className={`${dropdownStyles.dropdownToggle}`} onClick={dropdownClick}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" className="w-8" active={"" + dropdownActive}>
@@ -18,7 +18,7 @@ export default function NavBar(props) {
             </button>
 
             <div id="dropdown" className={`absolute top-14 ${dropdownStyles.dropdown}`} active={"" + dropdownActive}>
-                <ul className="grid grid-col-1 py-1 text-sm dark:bg-zinc-900 bg-zinc-200 rounded-b-lg pr-5 pl-3 dark:text-gray-200 dark:text-neutral-300 text-neutral-700 w-40" aria-labelledby="dropdownMenu">
+                <ul className="transition ease-in-out grid grid-col-1 py-1 text-sm dark:bg-zinc-900 bg-zinc-200 rounded-b-lg pr-5 pl-3 dark:text-gray-200 dark:text-neutral-300 text-neutral-700 w-40" aria-labelledby="dropdownMenu">
                     <Link href="/download">
                         <a className="text-lg transition ease-in-out duration-100 p-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose">Download</a>
                     </Link>
