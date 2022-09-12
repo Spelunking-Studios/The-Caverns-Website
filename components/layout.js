@@ -17,7 +17,7 @@ export default function Layout( { children }) {
 			<NextNProgress options={{ showSpinner: false }} showSpinner={false} color={`${darkMode ? "#1d4ed8" : "#3b82f6"}`}/>
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 			<link rel="preconnect" href="https://fonts.googleapis.com"/>
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
 			<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@900&family=Raleway&family=Titillium+Web&display=swap" rel="stylesheet"/>
 			<div className="scrollbar-thin scrollbar-thumb-blue-700">
 				{ childrenWithProps }

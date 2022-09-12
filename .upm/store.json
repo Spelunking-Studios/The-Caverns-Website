@@ -1,0 +1,1 @@
+{"version":2,"languages":{"nodejs-npm":{"specfileHash":"790335183caa7f8bec407d5ccfbb57b2","lockfileHash":"5815e91d77355eb0dea6b7029a490e5a","guessedImports":["jsonwebtoken","@upstash/redis","cookies-next","nodemailer","next","react","nextjs-progressbar","tailwind-scrollbar","next-auth","swr","tailwindcss"],"guessedImportsHash":"fda410120b018f4106a00a847eb0eeb4"}}}

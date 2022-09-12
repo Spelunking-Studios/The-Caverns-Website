@@ -42,10 +42,10 @@ export default function enemyStats(props) {
 					<h1 className="text-7xl text-center text-zinc-800 mt-28 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">{ jdata.name.toUpperCase() } STATS</h1>
 				</header>
 				<main className="flex-grow w-full mx-auto min-h-full">
-					<div className="grid grid-cols-3 rounded-lg w-1/3 border-4 border-zinc-400 mx-auto text-xl p-4 mb-24">
-						<a className="text-2xl p-1 col-span-2">Name: { jdata.name }</a>
-						<a className="text-2xl p-1 col-span-2">Health: { jdata.a.health } ({ (jdata.a.health / 100) * 100 }% of player's health)</a>
-						<a className="text-2xl p-1 col-span-2">Damage: { jdata.a.damage }</a>
+					<div className="grid grid-rows-3 rounded-lg w-9/12 lg:w-1/3 border-4 border-zinc-400 mx-auto text-xl p-4 mb-24">
+						<a className="text-2xl p-1">Name: { jdata.name }</a>
+						<a className="text-2xl p-1">Health: { jdata.a.health } ({ (jdata.a.health / 100) * 100 }% of player's health)</a>
+						<a className="text-2xl p-1">Damage: { jdata.a.damage }</a>
 					</div>
 				</main>
 				<Footer/>

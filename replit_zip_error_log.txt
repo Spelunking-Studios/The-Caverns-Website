@@ -1,0 +1,14 @@
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/acorn","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/autoprefixer","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/browserslist","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/browserslist-lint","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/cssesc","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/detective","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/loose-envify","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/nanoid","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/next","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/resolve","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/semver","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/tailwind","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/tailwindcss","time":"2022-09-10T00:49:16Z"}
+{"error":".zip archives do not support non-regular files","level":"error","msg":"unable to write file node_modules/.bin/uuid","time":"2022-09-10T00:49:16Z"}
