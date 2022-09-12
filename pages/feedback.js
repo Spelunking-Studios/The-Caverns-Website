@@ -33,8 +33,8 @@ export default function Feedback(props) {
     };
     const loadBugText = () => {
         setFc(
-            <div>
-                <textarea placeholder="Enter description" className="rounded-lg p-3 outline-none text-black dark:text-white bg-zinc-300 dark:bg-zinc-600 w-full mx-auto mt-8 mb-6 resize-none" name="content" onInput={setFormContent}></textarea>
+            <div className="p-2">
+                <textarea placeholder="Enter description" className="rounded-lg p-3 outline-none text-black dark:text-white bg-zinc-300 dark:bg-zinc-600 w-full mx-auto mb-6 resize-none border-2 border-zinc-300 dark:border-zinc-600 focus:border-zinc-500 focus:dark:border-neutral-500" name="content" onInput={setFormContent}></textarea>
                 <div className="grid lg:grid-cols-3 mb-6">
                     <p className="mx-auto lg:m-0 lg:pr-8">How often does this disrupt your gameplay?</p>
                     {/*<input type="number" min="1" max="10" name="bug-severity" className="text-black dark:text-white bg-neutral-300 dark:bg-neutral-600" onChange={e => {setForm_bugSeverity(e.target.value)}} onInput={e => {setForm_bugSeverity(e.target.value)}}/>*/}
@@ -45,7 +45,9 @@ export default function Feedback(props) {
     }
     const loadSuggestionText = () => {
         setFc(
-            <textarea placeholder="Enter description" className="rounded-lg p-3 outline-none text-black dark:text-white bg-zinc-300 dark:bg-zinc-600 w-full mx-auto mt-8 mb-6 resize-none" name="content" onInput={setFormContent}></textarea>
+            <div className="p-2">
+            <textarea placeholder="Enter description" className="rounded-lg p-3 outline-none text-black dark:text-white bg-zinc-300 dark:bg-zinc-600 w-full mx-auto mb-6 resize-none border-2 border-zinc-300 dark:border-zinc-600 focus:border-zinc-500 focus:dark:border-neutral-500" name="content" onInput={setFormContent}></textarea>
+            </div>
         )
     }
     return (
@@ -75,7 +77,7 @@ export default function Feedback(props) {
                             </div>
                         </fieldset>
                         {fc}
-                        <input type="submit" value="Submit" className="disabled:cursor-not-allowed enabled:hover:cursor-pointer rounded-lg bg-neutral-300 dark:bg-neutral-500 p-3 transition ease-in-out enabled:hover:scale-110 enabled:focus:scale-110 mx-auto mt-3 mb-10 enabled:dark:hover:bg-neutral-400 enabled:dark:focus:bg-neutral-400 block text-2xl outline-none" disabled={true} />
+                        <input type="submit" value="Submit" className="rounded-lg bg-neutral-300 dark:bg-neutral-500 px-3 py-2 transition ease-in-out enabled:hover:scale-110 enabled:focus:scale-110 mx-auto my-3 enabled:dark:hover:bg-neutral-400 enabled:dark:focus:bg-neutral-400 block text-2xl outline-none" disabled={true} />
                     </form>
                 </main>
                 <Footer />
