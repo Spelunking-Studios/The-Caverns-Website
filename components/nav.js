@@ -35,13 +35,13 @@ export default function NavBar(props) {
             </div>
 
             <Link href="/">
-                <a className="text-2xl transition ease-in-out duration-100 pt-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose">The Caverns</a>
+                <a className="text-xl mt-1 lg:mt-2 lg:text-2xl transition ease-in-out duration-100 pt-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose">The Caverns</a>
             </Link>
 
             <div className="flex flex-grow"></div>
 
             <Link href="/sign-in">
-                <a className="text-2xl transition ease-in-out duration-100 pt-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose">Sign In</a>
+                <a className="text-xl mt-1 lg:mt-2 lg:text-2xl transition ease-in-out duration-100 pt-1 hover:text-sky-500 dark:hover:text-sky-400 leading-loose">Sign In</a>
             </Link>
 
             <ThemeToggle forceRerender={props.forceRerender} />

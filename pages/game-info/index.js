@@ -14,7 +14,7 @@ export default function GameInfo(props) {
         <NavBar forceRerender={props.forceRerender} />
         <header className="h-fit w-full overflow-hidden min-h-full">
           <h1 className="text-7xl text-center text-zinc-800 mt-28 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">GAME INFO</h1>
-          <h2 className="text-3xl text-center text-zinc-500 mr-auto ml-auto dark:text-neutral-300">This is the home of all sorts of information about the game, from enemies, to the level progression.</h2>
+          <h2 className="text-3xl px-5 lg:p-0 text-center text-zinc-500 mr-auto ml-auto dark:text-neutral-300">This is the home of all sorts of information about the game, from enemies, to the level progression.</h2>
         </header>
         <main className="flex-grow w-full pt-20 ml-auto mr-auto min-h-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 w-2/3 lg:w-1/3 mx-auto pt-10 pb-10">
