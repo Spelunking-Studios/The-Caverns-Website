@@ -18,11 +18,11 @@ export default function SignIn(props) {
                 </Head>
                 <NavBar forceRerender={props.forceRerender} />
                 <header className="h-fit w-full overflow-hidden">
-                    <h1 className="text-5xl lg:text-7xl text-center text-zinc-800 mt-28 mb-5 mr-auto ml-auto dark:text-neutral-200 font-cinzel">SIGN IN</h1>
+                    <h1 className="text-5xl lg:text-7xl text-center text-zinc-800 mt-28 mb-11 mr-auto ml-auto dark:text-neutral-200 font-cinzel">SIGN IN</h1>
                 </header>
                 <main className="flex-grow w-full mx-auto min-h-full">
                     <div className="mx-auto w-full">
-                        <form className="w-9/12 lg:w-1/4 mx-auto" method="POST" action="/api/auth/sign-in">
+                        <form className="w-9/12 lg:w-1/5 mx-auto" method="POST" action="/api/auth/sign-in">
                             <fieldset className="grid row-3 gap-2">
                                 <input className="transition ease-in-out text-xl outline-none bg-zinc-600 m-2 px-2 py-1 border-2 border-zinc-600 rounded-lg focus:border-zinc-500" type="email" name="email" placeholder="Email" />
                                 <div className="flex flex-row transition ease-in-out text-xl outline-none bg-zinc-600 m-2 px-2 py-1 border-2 border-zinc-600 rounded-lg focus:border-zinc-500">
