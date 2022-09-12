@@ -12,7 +12,7 @@ export default function Credits(props) {
 			</Head>
 			<NavBar forceRerender={props.forceRerender}/>
 			<header className="h-fit w-full overflow-hidden">
-				<h1 className="text-7xl text-center text-zinc-800 mt-28 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">CREDITS</h1>
+				<h1 className="text-5xl lg:text-7xl text-center text-zinc-800 mt-28 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">CREDITS</h1>
 			</header>
 			<main className="flex-grow w-full mx-auto min-h-full">
 				<div className="grid grid-cols-1 lg:grid-cols-2 w-1/2 mx-auto text-center">

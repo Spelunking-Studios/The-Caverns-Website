@@ -26,7 +26,7 @@ export default function EnemyStats(props) {
           </Head>
           <NavBar forceRerender={props.forceRerender} />
           <header className="h-fit w-full overflow-hidden min-h-screen">
-            <h1 className="text-7xl text-center text-zinc-800 mt-28 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">ENEMY STATS</h1>
+            <h1 className="text-5xl lg:text-7xl text-center text-zinc-800 mt-28 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">ENEMY STATS</h1>
           </header>
           <main className="flex-grow pt-20 ml-auto mr-auto min-h-full">
             <p className="text-4xl text-center">Sorry, we ran into an error.</p>
@@ -45,7 +45,7 @@ export default function EnemyStats(props) {
           </Head>
           <NavBar forceRerender={props.forceRerender} />
           <header className="h-fit w-full overflow-hidden min-h-screen">
-            <h1 className="text-7xl text-center text-zinc-800 mt-28 mb-20 mx-auto dark:text-neutral-200 font-cinzel">ENEMY STATS</h1>
+            <h1 className="text-5xl lg:text-7xl text-center text-zinc-800 mt-28 mb-20 mx-auto dark:text-neutral-200 font-cinzel">ENEMY STATS</h1>
           </header>
           <main className="flex-grow pt-20 ml-auto mr-auto min-h-full">
             <p className="text-4xl text-center">Loading...</p>
@@ -74,10 +74,10 @@ export default function EnemyStats(props) {
         </Head>
         <NavBar forceRerender={props.forceRerender} />
         <header className="h-fit w-full overflow-hidden min-h-full">
-          <h1 className="text-7xl text-center text-zinc-800 mt-28 mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">ENEMY STATS</h1>
+          <h1 className="text-5xl lg:text-7xl text-center text-zinc-800 mt-28 mb-14 lg:mb-20 mr-auto ml-auto dark:text-neutral-200 font-cinzel">ENEMY STATS</h1>
         </header>
-        <main className="flex-grow w-full pt-10 ml-auto mr-auto min-h-full">
-          <div className={`grid grid-cols-${(jdata.enemies.length >= 3 ? "3" : jdata.enemies.length)} gap-24 w-1/2 ml-auto mr-auto pb-24`}>
+        <main className="flex-grow w-full ml-auto mr-auto min-h-full">
+          <div className={`grid grid-rows-${(jdata.enemies.length >= 3 ? "3" : jdata.enemies.length)} lg:grid-cols-${(jdata.enemies.length >= 3 ? "3" : jdata.enemies.length)} gap-12 lg:gap-24 w-3/4 lg:w-1/2 ml-auto mr-auto pb-24`}>
             {l}
           </div>
         </main>

@@ -15,7 +15,7 @@ export default function CheckYourEmail(props) {
                 </Head>
                 <NavBar forceRerender={props.forceRerender} />
                 <header className="h-fit w-full overflow-hidden">
-                    <h1 className="text-7xl text-center text-zinc-800 mt-28 mb-5 mr-auto ml-auto dark:text-neutral-200 font-cinzel">SIGN UP</h1>
+                    <h1 className="text-5xl lg:text-7xl text-center text-zinc-800 mt-28 mb-5 mr-auto ml-auto dark:text-neutral-200 font-cinzel">SIGN UP</h1>
                     <div>
                         <p className="text-center mx-auto w-fit block font-cinzel mb-20 hover:text-sky-500">Last Step!</p>
                     </div>
