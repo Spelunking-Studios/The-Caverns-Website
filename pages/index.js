@@ -15,6 +15,7 @@ export default function Home(props) {
 		    <div className="transition ease-in-out flex flex-col min-h-screen w-full bg-zinc-100 dark:bg-zinc-700 dark:text-neutral-200">
 				<Head>
 					<title>The Caverns</title>
+					<link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
 				</Head>
 				<NavBar forceRerender={props.forceRerender}/>
 				<header className={`h-fit w-full overflow-hidden dark:bg-zinc-700 dark:text-neutral-200 ${styles.pagewdbg}`}>	
