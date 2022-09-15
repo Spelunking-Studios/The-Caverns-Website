@@ -19,7 +19,7 @@ export default function Home(props) {
 				</Head>
 				<NavBar forceRerender={props.forceRerender}/>
 				<header className={`h-fit w-full overflow-hidden dark:bg-zinc-700 dark:text-neutral-200 ${styles.pagewdbg}`}>	
-					<img className="max-h-64 mx-auto mt-16 mb-10 w-auto h-auto aspect-auto" src="/images/TheCaverns.png"/>
+					<img className="max-h-72 mx-auto mt-16 mb-10 w-auto h-auto aspect-auto" src="/images/CavernsLogo.webp"/>
 				</header>
 				<main className="flex-grow w-full mx-auto mb-0 dark:bg-zinc-700 dark:text-neutral-200">
 				<p className="text-center text-3xl pt-2 pb-2 mx-auto max-w-9/12">A top down indie action-adventure RPG.</p>
