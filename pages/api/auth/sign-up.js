@@ -57,10 +57,5 @@ If this was not you, please ignore this email.`,
     });
     res.redirect(302, "/checkYourEmail");
     return;
-    res.status(200).json({
-        "cookies": getCookies(),
-        "jwt": jwt.sign({ foo: 'bar' }, 'shhhhh'),
-        "body": body,
-        "data": data
-    });
+    
 }
