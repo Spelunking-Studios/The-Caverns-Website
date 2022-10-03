@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"version":2,"languages":{"nodejs-npm":{"specfileHash":"3b4685f2949694231219a962816f6195","lockfileHash":"7590974bb32a0f3cc2e7cd99a3739964","guessedImports":["next","next-auth","cookies-next","jsonwebtoken","nodemailer","nextjs-redirect","react","nextjs-progressbar","@upstash/redis","swr","tailwindcss","tailwind-scrollbar"],"guessedImportsHash":"422c0527110db5d02c4cee279193aa67"}}}
-=======
 {"version":2,"languages":{"nodejs-npm":{"specfileHash":"c941b1503ae8da67cedfca26607ea1e0","lockfileHash":"7faf0b5e6e49d5eb4b35b07fca2eb41c","guessedImports":["tailwindcss","next","nextjs-progressbar","jsonwebtoken","@upstash/redis","swr","tailwind-scrollbar","react","cookies-next","nodemailer","next-auth"],"guessedImportsHash":"da9681ac08de7f8d9c36bbbdcf3cd0ea"}}}
->>>>>>> 8aa1328a320168a3d2880dad3e3dcd8dd3e1ee98
