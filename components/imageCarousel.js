@@ -55,5 +55,5 @@ export default function ImageCarousel(props) {
 				{images}
 			</div>
 	)
-	{/*</div>*/}
+	{}
 }
