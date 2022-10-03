@@ -1,0 +1,7 @@
+version = 1
+
+exclude_patterns = [".next/**"]
+
+[[analyzers]]
+name = "javascript"
+enabled = true

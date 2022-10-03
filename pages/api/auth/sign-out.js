@@ -1,15 +1,20 @@
-import { setCookie, getCookie, getCookies } from 'cookies-next';
-import { v4 as uuidv4 } from 'uuid';
+import { setCookie, getCookie, getCookies, deleteCookie } from 'cookies-next';
 import jwt from "jsonwebtoken";
 import { Redis } from "@upstash/redis";
 
 export default async function handler(req, res) {
-    const body = req.body;
-    const redis = new Redis({
+    let c = getCookie("ahc", { req, res });
+    if (!c) {
+        res.redirect(302, "/?error=SoF");
+        return;
+    }
+    deleteCookie("ahc", { req, res });
+    res.redirect(302, "/sign-in");
+    /*const redis = new Redis({
         url: process.env.UPSTASH_REDIS_URL,
         token: process.env.UPSTASH_REDIS_TOKEN
-    });
-    var dbq = await redis.get(`${process.env.UPSTASH_REDIS_BASEKEY}:users:users:${body.email}`);
+    });*/
+    /*var dbq = await redis.get(`${process.env.UPSTASH_REDIS_BASEKEY}:users:users:${body.email}`);
     if (!dbq.email || !dbq.password) {
         res.redirect(302, "/sign-in?error=Internal");
         return;
@@ -29,5 +34,5 @@ export default async function handler(req, res) {
     } else {
         res.redirect(302, "/sign-in?error=BadInfo");
         return;
-    }
+    }*/
 }

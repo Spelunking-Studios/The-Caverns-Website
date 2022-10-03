@@ -12,11 +12,19 @@
 }
 
 @layer utilities {
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+input:autofill input,
+input:focus,
+input:hover,
+input:active {
+    color: black;
+    bakground-color: red;
 }
 
 @layer base {
