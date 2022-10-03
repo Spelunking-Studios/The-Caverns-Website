@@ -9,6 +9,7 @@ import { useState } from 'react';
 export default function SignIn(props) {
 
     const [showPassword, setShowPassword] = useState (false)
+    const [googleSignin, setGoogleSignin] = useState (false)
 
     return (
         <div className={`${(darkMode % 2) ? "dark" : ""}`}>
@@ -18,13 +19,14 @@ export default function SignIn(props) {
                 </Head>
                 <NavBar forceRerender={props.forceRerender} />
                 <header className="h-fit w-full overflow-hidden">
+                    <p className={` ${googleSignin? "text-9xl mt-28 scale pb-96 mx-10 mb-96 leading-normal" : "scale-0" }`}>My name is Walter Hartwell White. I live at 308 Negra Arroyo Lane, Albuquerque, New Mexico, 87104.</p>
                     <h1 className="text-5xl lg:text-7xl text-center text-zinc-800 mt-28 mb-11 mr-auto ml-auto dark:text-neutral-200 font-cinzel">SIGN IN</h1>
                 </header>
                 <main className="flex-grow w-full mx-auto min-h-full">
                     <div className="mx-auto w-full">
                         <form className="w-9/12 lg:w-1/5 mx-auto" method="POST" action="/api/auth/sign-in">
-                            <fieldset className="grid row-3 gap-2">
-                                <input className="transition ease-in-out text-xl outline-none bg-zinc-600 m-2 px-2 py-1 border-2 border-zinc-600 rounded-lg focus:border-zinc-500 autofill:bg-zinc-900" type="email" name="email" placeholder="Email" />
+                            <fieldset className="grid row-3">
+                                <input className="transition ease-in-out text-xl outline-none bg-zinc-600 mx-2 mb-3 px-2 py-1 border-2 border-zinc-600 rounded-lg focus:border-zinc-500 autofill:bg-zinc-900" type="email" name="email" placeholder="Email" />
                                 <div className="grid grid-rows-1 relative">
                                     <input className="transition ease-in-out text-xl outline-none bg-zinc-600 m-2 px-2 py-1 border-2 border-zinc-600 rounded-lg focus:border-zinc-500" type={showPassword? "text" : "password"} id="passwordBox" name="password" placeholder="Password"/>
                                     <div className="absolute mt-4 right-11">
@@ -37,8 +39,15 @@ export default function SignIn(props) {
                                         </svg>
                                     </div>
                                 </div>
+                                <input class="rounded-lg bg-neutral-300 dark:bg-neutral-500 px-2 py-1.5 transition ease-in-out mx-2 my-3 enabled:dark:hover:bg-neutral-400 enabled:dark:focus:bg-neutral-400 block text-xl outline-none cursor-pointer" type="submit" value="Sign In" />
+                                <div className="relative border-b-2 mx-2 my-6">
+                                    <span className="absolute -top-2.5 text-center w-full "><a className="dark:bg-zinc-700 px-2 py-1 rounded-lg">OR</a></span>
+                                </div>
+                                <div className="transition ease-in-out dark:bg-zinc-100 dark:hover:bg-zinc-400 mx-2 text-black py-1.5 rounded-lg text-xl flex grid-cols-2 gap-4 my-4 justify-center cursor-pointer" onClick={ ()=>setGoogleSignin(!googleSignin)}>
+                                    <img src="/images/GoogleLogo.webp" className="w-7"/>
+                                    <p>Sign in with Google</p>
+                                </div>
                                 <p className="m-auto my-2 lg:m-2">Don't have an account? Sign up <a class="transition ease-in-out underline hover:text-sky-300" href="/sign-up">here</a></p>
-                                <input class="rounded-lg bg-neutral-300 dark:bg-neutral-500 px-3 py-2 transition ease-in-out enabled:hover:scale-110 enabled:focus:scale-110 mx-auto my-3 enabled:dark:hover:bg-neutral-400 enabled:dark:focus:bg-neutral-400 block text-2xl outline-none" type="submit" value="Submit" />
                             </fieldset>
                             
                         </form>
