@@ -1,0 +1,7 @@
+/* Variables */
+:root {
+	--bg-color-out-minor: rgb(200, 200, 200);
+	/* Buttons */
+	--bg-color-btn-download: rgb(43, 145, 79);
+	--bg-color-btn-disabled: rgb(171, 171, 171);
+}

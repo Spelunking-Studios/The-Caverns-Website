@@ -1,22 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel&family=Raleway&family=Titillium+Web&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-	#__next {
-		@apply dark:bg-zinc-700 dark:text-neutral-200;
-	}
+:root {
+	transition: 1s;
 }
 
-@layer utilities {
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 input:autofill input,
@@ -27,53 +19,18 @@ input:active {
     bakground-color: red;
 }
 
-@layer base {
-	[data-theme="default"] {
-		/* Red */
-		--colors-red-50: #fef2f2;
-		--colors-red-100: #fee2e2;
-		--colors-red-200: #fecaca;
-		--colors-red-300: #fca5a5;
-		--colors-red-400: #f87171;
-		--colors-red-500: #ef4444;
-		--colors-red-600: #dc2626;
-		--colors-red-700: #b91c1c;
-		--colors-red-800: #991b1b;
-		--colors-red-900: #7f1d1d;
-		/* Blue */
-		--colors-blue-50: #eff6ff;
-		--colors-blue-100: #dbeafe;
-		--colors-blue-200: #bfdbfe;
-		--colors-blue-300: #93c5fd;
-		--colors-blue-400: #60a5fa;
-		--colors-blue-500: #3b82f6;
-		--colors-blue-600: #2563eb;
-		--colors-blue-700: #1d4ed8;
-		--colors-blue-800: #1e40af;
-		--colors-blue-900: #1e3a8a;
-	}
-	[data-theme="dark"] {
-		/* Red */
-		--colors-red-900: #fef2f2;
-		--colors-red-800: #fee2e2;
-		--colors-red-700: #fecaca;
-		--colors-red-600: #fca5a5;
-		--colors-red-500: #f87171;
-		--colors-red-400: #ef4444;
-		--colors-red-300: #dc2626;
-		--colors-red-200: #b91c1c;
-		--colors-red-100: #991b1b;
-		--colors-red-50: #7f1d1d;
-		/* Blue */
-		--colors-blue-900: #eff6ff;
-		--colors-blue-800: #dbeafe;
-		--colors-blue-700: #bfdbfe;
-		--colors-blue-600: #93c5fd;
-		--colors-blue-500: #60a5fa;
-		--colors-blue-400: #3b82f6;
-		--colors-blue-300: #2563eb;
-		--colors-blue-200: #1d4ed8;
-		--colors-blue-100: #1e40af;
-		--colors-blue-50: #1e3a8a;
-	}
+.font-title {
+	font-family: cinzel;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.flex-row {
+	flex-direction: row;
 }
