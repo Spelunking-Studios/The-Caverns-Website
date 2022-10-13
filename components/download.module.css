@@ -1,11 +1,10 @@
 .download {
-	background-color: var(--bg-color-out-minor);
 	display: flex;
 	flex-direction: column;
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	gap: 1%;
+	gap: 2rem;
 	padding-bottom: 4rem;
 }
 
@@ -15,6 +14,7 @@
 	border-radius: 0.5rem;
 	padding: 0.25rem;
 	padding-top: 1.75rem;
+	background-color: var(--bg-color-out-minor);
 }
 
 .download-option-image-container {

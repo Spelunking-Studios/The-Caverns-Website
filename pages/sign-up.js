@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from "next/link";
-import Footer from "../components/footer.js";
 import NavBar from "../components/nav.js";
 import { darkMode } from "../globalStates/theme.js";
 import { useState } from 'react';
@@ -46,7 +45,6 @@ export default function SignUp(props) {
                         </form>
                     </div>
                 </main>
-                <Footer />
             </div>
         </div>
     )

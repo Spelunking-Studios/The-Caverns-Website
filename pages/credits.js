@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import NavBar from "../components/nav.js";
-import Footer from "../components/footer.js";
 import { darkMode } from "../globalStates/theme.js";
 
 export default function Credits(props) {
@@ -21,7 +20,6 @@ export default function Credits(props) {
                     <p>Ben Landon</p>
                 </div>
 			</main>
-      <Footer/>
 		</div>
 	</div>
   )

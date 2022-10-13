@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Footer from "../components/footer.js";
 import NavBar from "../components/nav.js";
 import { darkMode } from "../globalStates/theme.js";
 import ImageCarousel from "../components/imageCarousel.js";
@@ -30,7 +29,6 @@ export default function Home(props) {
 						<DownloadList/>
 					</section>
 				</main>
-      <Footer/>
 			</div>
 		</div>
   	)

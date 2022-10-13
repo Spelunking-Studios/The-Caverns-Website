@@ -3,6 +3,8 @@ import { useState } from "react";
 import React from "react";
 import NextNProgress from "nextjs-progressbar";
 import { darkMode } from "../globalStates/theme.js";
+import Footer from "./footer.js";
+import styles from "./layout.module.css";
 
 export default function Layout( { children }) {
 	const [r, sr] = useState(0);
@@ -13,7 +15,7 @@ export default function Layout( { children }) {
 		return React.cloneElement(child, { forceRerender })
 	});
 	return (
-		<div className="">
+		<div>
 			<NextNProgress options={{ showSpinner: false }} showSpinner={false} color={`${darkMode ? "#1d4ed8" : "#3b82f6"}`}/>
 			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 			<link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -22,8 +24,11 @@ export default function Layout( { children }) {
 			{
 				darkMode ? <link rel="stylesheet" href="/dark.css"/> : <link rel="stylesheet" href="/light.css"/>
 			}
-			<div className="">
-				{ childrenWithProps }
+			<div className={styles.contentWrapper}>
+				<div className={styles.contentContainer}>
+					{ childrenWithProps }
+				</div>
+				<Footer/>
 			</div>
 		</div>
 	)

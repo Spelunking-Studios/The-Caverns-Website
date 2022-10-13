@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import NavBar from "../components/nav.js";
-import Footer from "../components/footer.js";
 import DownloadList from "../components/download.js";
 import { darkMode } from "../globalStates/theme.js";
 
@@ -18,7 +17,6 @@ export default function Download(props) {
 			<main className="flex-grow w-full mx-auto min-h-full">
 				<DownloadList/>
 			</main>
-      <Footer/>
 		</div>
 	</div>
   )

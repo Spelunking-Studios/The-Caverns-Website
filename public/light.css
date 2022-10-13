@@ -1,6 +1,14 @@
 /* Variables */
 :root {
 	--bg-color-out-minor: rgb(200, 200, 200);
+	/* Footer */
+	--bg-color-footer: rgb(200, 200, 200);
+	--text-color-footer-link: rgb(0, 0, 0);
+	--text-color-footer-link-hover: rgb(45, 116, 230);
+	/* Nav */
+	--bg-color-nav: rgb(200, 200, 200);
+	--text-color-nav-link: rgb(0, 0, 0);
+	--text-color-nav-link-hover: rgb(45, 116, 230);
 	/* Buttons */
 	--bg-color-btn-download: rgb(43, 145, 79);
 	--bg-color-btn-disabled: rgb(171, 171, 171);

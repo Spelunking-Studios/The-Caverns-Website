@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import NavBar from "../components/nav.js";
-import Footer from "../components/footer.js";
 import { darkMode } from "../globalStates/theme.js";
 
 export default function Custom404(props) {
@@ -17,7 +16,6 @@ export default function Custom404(props) {
 			<main className="flex-grow w-full mx-auto min-h-full">
 				<p className="text-center text-2xl">Thats a 404.</p>
 			</main>
-      <Footer/>
 		</div>
 	</div>
     )

@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import NavBar from "../components/nav.js";
-import Footer from "../components/footer.js";
 import NumberInput from "../components/numberInput.js";
 import { darkMode } from "../globalStates/theme.js";
 import dropdownStyles from "./dropdown.module.css";
@@ -80,7 +79,6 @@ export default function Feedback(props) {
                         <input type="submit" value="Submit" className="rounded-lg bg-neutral-300 dark:bg-neutral-500 px-3 py-2 transition ease-in-out enabled:hover:scale-110 enabled:focus:scale-110 mx-auto my-3 enabled:dark:hover:bg-neutral-400 enabled:dark:focus:bg-neutral-400 block text-2xl outline-none" disabled={true} />
                     </form>
                 </main>
-                <Footer />
             </div>
         </div>
     )

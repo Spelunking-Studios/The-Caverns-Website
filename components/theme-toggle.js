@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { darkMode, setDarkMode } from "../globalStates/theme.js";
+import styles from "./theme-toggle.module.css";
 
 export default function ThemeToggle(props) {
 	const [dark, setDark] = useState(false);
@@ -24,6 +25,6 @@ export default function ThemeToggle(props) {
 		}
 	})
 	return (
-		<button onClick={toggle} className="grid-col-span-1 leading-5 align-middle pt-2 pb-2 ml-auto mt-1"><span className="material-symbols-outlined">{ darkMode ? "dark_mode" : "light_mode" }</span></button>
+		<button onClick={toggle} className={styles["theme-toggle-button"]}><span className="material-symbols-outlined">{ darkMode ? "dark_mode" : "light_mode" }</span></button>
 	)
 }

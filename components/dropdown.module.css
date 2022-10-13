@@ -2,6 +2,16 @@
     display: none;
 }
 
+.dropdown > ul {
+	display: grid;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+	border-bottom-left-radius: 0.25rem;
+	width: 10rem;
+	background-color: var(--bg-color-nav);
+}
+
 .dropdownToggle > svg[active="true"] {
     transform: scaleY(-1);
     transition: 150ms;

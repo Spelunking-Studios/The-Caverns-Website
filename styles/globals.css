@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel&family=Raleway&family=Titillium+Web&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
+html, body {
+	margin: 0px;
+}
+
 :root {
 	transition: 1s;
 }

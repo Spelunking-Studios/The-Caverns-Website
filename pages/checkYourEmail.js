@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from "next/link";
-import Footer from "../components/footer.js";
 import NavBar from "../components/nav.js";
 import { darkMode } from "../globalStates/theme.js";
 
@@ -23,7 +22,6 @@ export default function CheckYourEmail(props) {
                 <main className="flex-grow w-full mx-auto min-h-full">
                     <p className="text-center">Check your email.</p>
                 </main>
-                <Footer />
             </div>
         </div>
     )
