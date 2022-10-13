@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import NavBar from "../components/nav.js";
 import NumberInput from "../components/numberInput.js";
-import { darkMode } from "../globalStates/theme.js";
 import dropdownStyles from "./dropdown.module.css";
 import { useState } from "react";
 
@@ -50,7 +49,7 @@ export default function Feedback(props) {
         )
     }
     return (
-        <div className={`${(darkMode % 2) ? "dark" : ""}`}>
+        <div>
             <div className="transition ease-in-out flex flex-col min-h-screen w-full bg-zinc-100 dark:bg-zinc-700 dark:text-neutral-200">
                 <Head>
                     <title>Feedback - The Caverns</title>

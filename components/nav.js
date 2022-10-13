@@ -4,7 +4,7 @@ import dropdownStyles from "./dropdown.module.css";
 import { useState } from "react";
 import styles from "./nav.module.css";
 
-export default function NavBar(props) {
+export default function NavBar() {
     const [dropdownActive, setDropdownActive] = useState(false);
     const dropdownClick = () => {
         setDropdownActive(!dropdownActive);
@@ -45,7 +45,7 @@ export default function NavBar(props) {
                 <a className={styles["nav-link"]}>Sign In</a>
             </Link>
 
-            <ThemeToggle forceRerender={props.forceRerender} />
+            <ThemeToggle/>
             <span></span>
         </nav>
     )

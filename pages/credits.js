@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import NavBar from "../components/nav.js";
-import { darkMode } from "../globalStates/theme.js";
 
 export default function Credits(props) {
   return (
-    <div className={`${(darkMode % 2) ? "dark" : ""}`}>
+    <div>
 		<div className="flex flex-col min-h-screen w-full bg-zinc-100 dark:bg-zinc-700 dark:text-neutral-200">
 			<Head>
 				<title>Credits - The Caverns</title>
