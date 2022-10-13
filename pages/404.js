@@ -14,6 +14,7 @@ export default function Custom404() {
 					<h1 className={styles.title}>404</h1>
 				</header>
 				<main className={styles.main}>
+					<img src="/eli face.webp" className={styles.image}/>
 					<p className={styles.message}>Thats a 404.</p>
 				</main>
 			</div>

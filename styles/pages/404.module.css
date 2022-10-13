@@ -23,11 +23,22 @@
 
 .main {
 	display: flex;
+	flex-direction: column;
 	felx-grow: 1;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	min-height: 100%;
+}
+
+.image {
+	display: block;
+	width: auto;
+	height: auto;
+	max-height: 50vmin;
+	max-width: 50vmin;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .message {
