@@ -1,29 +1,30 @@
-import { useState, useEffect } from "react";
-import { darkMode, setDarkMode } from "../globalStates/theme.js";
+import { useEffect } from "react";
+import styles from "./theme-toggle.module.css";
+import { useTheme } from "../providers/theme.js";
+import useLocalStorage from "use-local-storage";
 
-export default function ThemeToggle(props) {
-	const [dark, setDark] = useState(false);
-	const toggle = () => {
-		darkMode = !dark;
-		if (typeof window != "undefined") {
-			localStorage.setItem("darkMode", darkMode);
-		}
-		setDark(!dark);
-		props.forceRerender();
+export default function ThemeToggle() {
+	let [theme, setTheme] = useTheme();
+	const [themeStorage, setThemeStorage] = useLocalStorage("theme", "light");
+	let themeBindings = {
+		"light": "light_mode",
+		"dark": "dark_mode"
 	}
-	useEffect(() => {
-		if (typeof window != "undefined") {
-			if (localStorage.getItem("darkMode") &&
-				JSON.parse(
-					localStorage.getItem("darkMode")
-						.toLowerCase()
-				) && dark == false
-			) {
-				toggle();
-			}
+	const st = () => {
+		setTheme(() => {
+			return themeStorage;
+		});
+	}
+	useEffect(st);
+	const toggle = () => {
+		let ret = "light";
+		if (theme == "light") {
+			ret = "dark";
 		}
-	})
+		setThemeStorage(ret);
+		st();
+	}
 	return (
-		<button onClick={toggle} className="grid-col-span-1 leading-5 align-middle pt-2 pb-2 ml-auto mt-1"><span className="material-symbols-outlined">{ darkMode ? "dark_mode" : "light_mode" }</span></button>
+		<button onClick={toggle} className={styles["theme-toggle-button"]}><span className="material-symbols-outlined">{ themeBindings[theme] }</span></button>
 	)
 }

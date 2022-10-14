@@ -15,3 +15,16 @@ body::-webkit-scrollbar-thumb {
     outline: 0px solid slategrey;
     border-radius: 15px;
 }
+
+body::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(177, 177, 177);
+}
+
+[data-theme="dark"]body::-webkit-scrollbar-thumb {
+	background-color: rgb(50, 50, 50);
+    outline: 0px solid slategrey;
+}
+
+[data-theme="dark"]body::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(75, 75, 75);
+}

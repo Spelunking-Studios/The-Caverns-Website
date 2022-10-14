@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Link from "next/link";
-import Footer from "../components/footer.js";
 import NavBar from "../components/nav.js";
-import { darkMode } from "../globalStates/theme.js";
 import { useState } from 'react';
 
 
@@ -12,7 +10,7 @@ export default function SignIn(props) {
     const [googleSignin, setGoogleSignin] = useState (false)
 
     return (
-        <div className={`${(darkMode % 2) ? "dark" : ""}`}>
+        <div>
             <div className="transition ease-in-out flex flex-col min-h-screen w-full bg-zinc-100 dark:bg-zinc-700 dark:text-neutral-200">
                 <Head>
                     <title>Sign In - The Caverns</title>
@@ -53,7 +51,6 @@ export default function SignIn(props) {
                         </form>
                     </div>
                 </main>
-                <Footer />
             </div>
         </div>
     )

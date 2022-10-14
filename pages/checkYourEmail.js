@@ -1,14 +1,10 @@
 import Head from 'next/head';
 import Link from "next/link";
-import Footer from "../components/footer.js";
 import NavBar from "../components/nav.js";
-import { darkMode } from "../globalStates/theme.js";
 
 export default function CheckYourEmail(props) {
-    {/* We need to split the sign in and sign up into 2 pages
-    */}
     return (
-        <div className={`${(darkMode % 2) ? "dark" : ""}`}>
+        <div>
             <div className="transition ease-in-out flex flex-col min-h-screen w-full bg-zinc-100 dark:bg-zinc-700 dark:text-neutral-200">
                 <Head>
                     <title>Check Your Email - The Caverns</title>
@@ -23,7 +19,6 @@ export default function CheckYourEmail(props) {
                 <main className="flex-grow w-full mx-auto min-h-full">
                     <p className="text-center">Check your email.</p>
                 </main>
-                <Footer />
             </div>
         </div>
     )
