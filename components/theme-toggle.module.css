@@ -11,6 +11,7 @@
 	border-radius: 50%;
 	cursor: pointer;
 	color: var(--text-color);
+	transition: filter 300ms;
 }
 
 .theme-toggle-button > span {
