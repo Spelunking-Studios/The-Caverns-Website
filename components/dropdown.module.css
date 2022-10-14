@@ -3,6 +3,13 @@
 }
 
 .dropdown > ul {
+	/* Remove list defaults */
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	
+	position: relative;
+	top: -1rem;
 	display: grid;
 	padding-top: 0.25rem;
 	padding-bottom: 0.25rem;
@@ -10,6 +17,10 @@
 	border-bottom-left-radius: 0.25rem;
 	width: 10rem;
 	background-color: var(--bg-color-nav);
+}
+
+.dropdownToggle > svg {
+	color: var(--text-color);
 }
 
 .dropdownToggle > svg[active="true"] {
@@ -22,8 +33,15 @@
     transition: 150ms;
 }
 
-.dropdownToggle{
+.dropdownToggle {
     transition: 150ms;
+	background-color: transparent;
+	border: none;
+	height: 2.5rem;
+	width: 2.5rem;
+	cursor: pointer;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .dropdownToggle:hover {

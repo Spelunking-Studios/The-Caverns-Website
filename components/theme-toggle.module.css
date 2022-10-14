@@ -4,4 +4,24 @@
 	padding: 0.5rem;
 	margin-left: auto;
 	margin-top: 0.25rem;
+	border: none;
+	background-color: inherit;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+	cursor: pointer;
+	color: var(--text-color);
+}
+
+.theme-toggle-button > span {
+	display: block;
+	margin: auto;
+}
+
+.theme-toggle-button:hover {
+	filter: brightness(90%);
+}
+
+[data-theme="dark"].theme-toggle-button:hover {
+	filter: brightness(150%);
 }

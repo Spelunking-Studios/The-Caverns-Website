@@ -2,7 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 [data-theme="light"] {
+	/* Generics */
+	--text-color: rgb(0, 0, 0);
+	--bg-color: rgb(255, 255, 255);
 	--bg-color-out-minor: rgb(200, 200, 200);
+	--text-color-hover: rgb(45, 116, 230);
 	/* Footer */
 	--bg-color-footer: rgb(200, 200, 200);
 	--text-color-footer-link: rgb(0, 0, 0);
@@ -17,26 +21,31 @@
 }
 
 [data-theme="dark"] {
+	/* Generics */
+	--text-color: rgb(255, 255, 255);
+	--bg-color: rgb(25, 25, 25);
 	--bg-color-out-minor: rgb(50, 50, 50);
+	--text-color-hover: rgb(45, 116, 230);
 	/* Footer */
 	--bg-color-footer: rgb(50, 50, 50);
 	--text-color-footer-link: rgb(0, 0, 0);
 	--text-color-footer-link-hover: rgb(45, 116, 230);
 	/* Nav */
 	--bg-color-nav: rgb(50, 50, 50);
-	--text-color-nav-link: rgb(0, 0, 0);
-	--text-color-nav-link-hover: rgb(45, 116, 230);
 	/* Buttons */
 	--bg-color-btn-download: rgb(43, 145, 79);
 	--bg-color-btn-disabled: rgb(71, 71, 71);
 }
 
-html, body {
-	margin: 0px;
+* {
+	transition: background-color 500ms ease-in-out;
 }
 
-:root {
-	transition: 1s;
+html, body {
+	margin: 0px;
+	color: var(--text-color);
+	background-color: var(--bg-color);
+	font-family: Raleway;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -53,18 +62,8 @@ input:active {
     bakground-color: red;
 }
 
-.font-title {
-	font-family: cinzel;
-}
-
-.flex {
-	display: flex;
-}
-
-.flex-col {
-	flex-direction: column;
-}
-
-.flex-row {
-	flex-direction: row;
+.page-title {
+	font-family: 'Cinzel Decorative';
+	text-align: center;
+	font-size: 4rem;
 }

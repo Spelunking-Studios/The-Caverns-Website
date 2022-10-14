@@ -1,17 +1,14 @@
 import NavBar from "./nav.js";
-import { useState, useEffect } from "react";
-import React from "react";
+import React, { useEffect } from "react";
 import NextNProgress from "nextjs-progressbar";
 import Footer from "./footer.js";
 import styles from "./layout.module.css";
-import Head from "next/head";
 import { useTheme } from "../providers/theme.js";
 import useLocalStorage from "use-local-storage";
 
 export default function Layout( { children }) {
 	const [theme, setTheme] = useTheme();
-	const [themeStorage, setThemeStorage] = useLocalStorage("theme", "light");
-	const [r, sr] = useState(0);
+	const [themeStorage] = useLocalStorage("theme", "light");
 	useEffect(() => {
 		document.querySelector("html").setAttribute("data-theme", theme);
 	});

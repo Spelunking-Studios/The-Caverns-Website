@@ -11,7 +11,7 @@ export default function Download(props) {
 			</Head>
 			<NavBar forceRerender={props.forceRerender}/>
 			<header className="h-fit w-full overflow-hidden">
-				<h1 className="font-title">DOWNLOAD</h1>
+				<h1 className="page-title">DOWNLOAD</h1>
 			</header>
 			<main className="flex-grow w-full mx-auto min-h-full">
 				<DownloadList/>

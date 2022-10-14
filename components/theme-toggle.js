@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import styles from "./theme-toggle.module.css";
 import { useTheme } from "../providers/theme.js";
 import useLocalStorage from "use-local-storage";
 
-export default function ThemeToggle(props) {
+export default function ThemeToggle() {
 	let [theme, setTheme] = useTheme();
 	const [themeStorage, setThemeStorage] = useLocalStorage("theme", "light");
 	let themeBindings = {

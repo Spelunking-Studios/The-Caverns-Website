@@ -8,17 +8,18 @@
 	top: 0;
 	left: 0;
 	background-color: var(--bg-color-nav);
+	color: var(--text-color);
 }
 
 .nav-item {
-	
+	color: var(--text-color);
 }
 
 .nav-link {
 	font-size: 1.5rem;
 	margin-top: 0.5rem;
 	padding-top: 0.25rem;
-	color: var(--text-color-nav-link);
+	color: var(--text-color);
 	vertical-align: middle;
 	line-height: normal;
 	text-decoration: none;
@@ -26,5 +27,5 @@
 }
 
 .nav-link:hover {
-	color: var(--text-color-nav-link-hover);
+	color: var(--text-color-hover);
 }
