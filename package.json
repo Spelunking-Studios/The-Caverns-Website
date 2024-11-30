@@ -13,7 +13,7 @@
     "next-auth": "^4.24.5",
     "nextjs-progressbar": "^0.0.14",
     "nextjs-redirect": "^6.0.1",
-    "nodemailer": "^6.7.8",
+    "nodemailer": "^6.9.9",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-draggable": "^4.4.5",
